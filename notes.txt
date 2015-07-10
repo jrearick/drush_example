@@ -1,0 +1,34 @@
+Premise:
+I want a drush command to set the site to maintance mode and set the message to a 
+user-specified string. It should work like the following:
+
+
+// turn on maintenance mode with message "This is my message"
+drush maintenance on --message="This is my message"
+
+// turns off maintenance mode
+drush maintenance off
+
+// turns on maintenance mode with the last message
+drush maintenance on
+
+
+create the mymodule.drush.inc
+
+hook_drush_command() - Tells drush that you have a command. Gives the basic informaiton in an array.
+
+Description - Used in help
+aliases - a shorter version of the command. eg cc instead of clear-cache
+option - optional command paramaters (message)
+arguments - manitory command paramaters (on|off)
+examples - give some nice examples
+
+drush cc drush
+
+drush help mm // should see help options
+
+create the callback. defaults (drush_mymodule_maintenance())
+
+arugumens come in from the fucntion arguments
+
+options come from drush_get_option('option-name');
