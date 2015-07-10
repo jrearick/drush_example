@@ -1,0 +1,9 @@
+<?php
+/**
+ * @file
+ * Code for the mymodule
+ */
+
+// nothing to see here. All the drush work is in mymodule.drush.inc
+
+

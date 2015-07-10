@@ -1,0 +1,4 @@
+name = mymodule
+description = Demo Module
+core = 7.x
+project = AAA Top of list
