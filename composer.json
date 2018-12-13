@@ -1,0 +1,16 @@
+{
+    "name": "jrearick/drush_example",
+    "description": "Example simple drush implementation",
+    "type": "drupal-module",
+    "homepage": "https://github.com/jrearick/drush_example",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:jrearick/drush_example.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ]
+}
